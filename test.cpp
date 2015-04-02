@@ -1,9 +1,10 @@
+#if(0)
 #include <windows.h>
 #include <gl/glut.h>
 
 GLfloat x1 = 0.0f;
 GLfloat y1 = 0.0f;
-GLsizei rsize = 50.0f;
+GLsizei rsize = 20.0f;
 
 GLfloat xstep = 1.0f;
 GLfloat ystep = 1.0f;
@@ -32,7 +33,7 @@ void TimerFunction(int value)
     x1 += xstep;
     y1 += ystep;
     glutPostRedisplay();
-    glutTimerFunc(33, TimerFunction, 1);
+    glutTimerFunc(1, TimerFunction, 1);
 }
 void SetupRC(void)
 {
@@ -59,14 +60,15 @@ void ChangeSize(GLsizei w, GLsizei h)
     glLoadIdentity();
 }
 
-int main()
+int main(void)
 {
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
     glutInitWindowSize(800, 600);
-	glutCreateWindow("BounceRectangle");
-	glutDisplayFunc(RenderScene);
+    glutCreateWindow("BounceRectangle");
+    glutDisplayFunc(RenderScene);
     glutReshapeFunc(ChangeSize);
-    glutTimerFunc(2000, TimerFunction, 1);
-	SetupRC();
-	glutMainLoop();
+    glutTimerFunc(0, TimerFunction, 1);
+    SetupRC();
+    glutMainLoop();
 }
+#endif
