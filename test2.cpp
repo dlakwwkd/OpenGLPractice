@@ -28,7 +28,7 @@ void RenderScene(void)
         x = 60.0f*sin(angle);
         y = 60.0f*cos(angle);
         glVertex3f(x, y, z);
-        x += 0.5f;
+        z += 0.5f;
     }
     glEnd();
 
