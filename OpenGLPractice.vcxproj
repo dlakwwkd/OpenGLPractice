@@ -77,9 +77,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="atom.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="drawJet.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="test2.cpp" />
     <ClCompile Include="triangle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GLEXT.H" />
+    <ClInclude Include="gltools.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
