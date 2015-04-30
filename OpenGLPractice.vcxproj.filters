@@ -9,6 +9,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{2ca538e7-94c7-4daa-8e2b-b16419ed6782}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="test.cpp">
@@ -29,13 +32,22 @@
     <ClCompile Include="drawJet.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="lodepng.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="textureMapping.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GLEXT.H">
-      <Filter>소스 파일</Filter>
+      <Filter>Util</Filter>
     </ClInclude>
     <ClInclude Include="gltools.h">
-      <Filter>소스 파일</Filter>
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="lodepng.h">
+      <Filter>Util</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
